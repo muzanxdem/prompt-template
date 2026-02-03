@@ -1,0 +1,306 @@
+# Prompt template generator — original 19 templates + 31 added = 50 total
+# Run: python generate_prompt_templates.py
+# Then: python run_prompt_benchmark.py
+
+presets:
+  # ========== ORIGINAL TEMPLATES (19) ==========
+  - name: short_simple_greeting
+    type: simple
+    length: short
+    body: "Hi"
+
+  - name: short_simple_help
+    type: simple
+    length: short
+    body: "I need help with this."
+
+  - name: short_simple_what_is
+    type: simple
+    length: short
+    body: "What is this document about?"
+
+  - name: short_architecture_basic
+    type: architecture
+    length: short
+    body: "Design a microservices architecture"
+
+  - name: short_architecture_api
+    type: architecture
+    length: short
+    body: "Describe a REST API design for a document search service."
+
+  - name: short_programming_snippet
+    type: programming
+    length: short
+    body: "Explain this code and suggest improvements."
+
+  - name: short_non_programming_summary
+    type: non_programming
+    length: short
+    body: "Summarize the main points in one paragraph."
+
+  - name: medium_simple_question
+    type: simple
+    length: medium
+    body: |
+      What are the key findings or recommendations in this document?
+      Please list the most important points.
+
+  - name: medium_programming_debug
+    type: programming
+    length: medium
+    body: |
+      Debug this code and explain what is wrong, why it fails, and how to fix it.
+      Provide a corrected version and suggest tests to prevent regressions.
+
+  - name: medium_programming_algorithm
+    type: programming
+    length: medium
+    body: |
+      Describe an efficient algorithm for the problem discussed in the context.
+      Include time and space complexity and edge cases.
+
+  - name: medium_architecture_web_app
+    type: architecture
+    length: medium
+    body: |
+      Propose a web application architecture (frontend, backend, data store, APIs).
+      Include scalability and security considerations.
+
+  - name: medium_non_programming_explanation
+    type: non_programming
+    length: medium
+    body: |
+      Explain the main concepts in simple terms for a non-expert audience.
+      Use analogies and examples where helpful.
+
+  - name: medium_non_programming_compare
+    type: non_programming
+    length: medium
+    body: |
+      Compare and contrast the approaches or options described in the document.
+      What are the pros and cons of each?
+
+  - name: long_programming_review
+    type: programming
+    length: long
+    body: |
+      Review the code or technical design in the context. Cover:
+      1) Correctness and potential bugs
+      2) Readability and maintainability
+      3) Performance and security
+      4) Suggested refactors and best practices
+      Provide concrete examples where relevant.
+
+  - name: long_architecture_enterprise
+    type: architecture
+    length: long
+    body: |
+      Design an enterprise-grade system architecture based on the requirements in the document.
+      Include: component diagram, data flow, deployment strategy, failure handling,
+      monitoring, and how to scale horizontally. Justify key technology choices.
+
+  - name: long_non_programming_analysis
+    type: non_programming
+    length: long
+    body: |
+      Analyze the document in depth. Identify the main thesis or goal, supporting arguments,
+      evidence used, and underlying assumptions. Discuss strengths and weaknesses of the
+      reasoning. Conclude with implications or recommendations.
+
+  - name: long_non_programming_summarize
+    type: non_programming
+    length: long
+    body: |
+      Provide a structured summary: (1) one-sentence overview, (2) main sections or themes,
+      (3) key facts or figures, (4) conclusions or next steps. Keep the summary accurate
+      and faithful to the source.
+
+  - name: extra_long_programming_spec
+    type: programming
+    length: extra_long
+    body: |
+      Using the full context provided, produce a detailed technical specification or implementation guide.
+      Include: scope and assumptions, high-level design, interface definitions, data models,
+      error handling, testing strategy, and deployment steps. Where the document describes
+      code or APIs, summarize and extend with concrete examples and best practices.
+      Aim for something a developer could use to implement the system without further research.
+
+  - name: extra_long_non_programming_report
+    type: non_programming
+    length: extra_long
+    body: |
+      Based on all the material in the context, write a short report (about 500–800 words) that:
+      (1) states the main topic and purpose of the source material,
+      (2) synthesizes the most important findings or arguments,
+      (3) identifies patterns, trends, or contradictions,
+      (4) discusses limitations or gaps in the material,
+      (5) suggests follow-up questions or actions.
+      Use clear headings and keep the tone professional and factual.
+
+  # ========== ADDED TEMPLATES (31) — total 50 ==========
+  - name: short_simple_next_step
+    type: simple
+    length: short
+    body: "What should I do next?"
+
+  - name: short_simple_who
+    type: simple
+    length: short
+    body: "Who is the intended audience?"
+
+  - name: short_simple_why
+    type: simple
+    length: short
+    body: "Why is this important?"
+
+  - name: short_simple_how
+    type: simple
+    length: short
+    body: "How do I get started?"
+
+  - name: short_simple_yesno_relevant
+    type: simple
+    length: short
+    body: "Is this document relevant to my question?"
+
+  - name: short_simple_alternatives
+    type: simple
+    length: short
+    body: "What are the alternatives?"
+
+  - name: short_simple_risks
+    type: simple
+    length: short
+    body: "What are the main risks?"
+
+  - name: short_programming_what
+    type: programming
+    length: short
+    body: "What does this code do?"
+
+  - name: short_programming_fix
+    type: programming
+    length: short
+    body: "How do I fix this error?"
+
+  - name: short_programming_test
+    type: programming
+    length: short
+    body: "How do I test this?"
+
+  - name: short_architecture_scale
+    type: architecture
+    length: short
+    body: "How does this scale?"
+
+  - name: short_non_programming_bullets
+    type: non_programming
+    length: short
+    body: "Give three bullet points."
+
+  - name: medium_simple_elaborate
+    type: simple
+    length: medium
+    body: |
+      Elaborate on the main idea. Give one concrete example and one counterexample.
+
+  - name: medium_simple_definition
+    type: simple
+    length: medium
+    body: "Define the key terms used in this document and give one example for each."
+
+  - name: medium_simple_impact
+    type: simple
+    length: medium
+    body: |
+      What is the business or technical impact of the content in this document? One paragraph.
+
+  - name: medium_programming_security
+    type: programming
+    length: medium
+    body: "Identify potential security issues in the design or code described in the context. Suggest mitigations."
+
+  - name: medium_programming_usage
+    type: programming
+    length: medium
+    body: |
+      How do I use this API or function? Give a minimal example and describe the parameters.
+
+  - name: medium_architecture_data
+    type: architecture
+    length: medium
+    body: "Propose a data model and storage strategy for the use case described. Consider consistency, backups, and scaling."
+
+  - name: medium_architecture_tradeoffs
+    type: architecture
+    length: medium
+    body: |
+      What are the tradeoffs in this design? Compare at least two options and when to use each.
+
+  - name: medium_non_programming_audience
+    type: non_programming
+    length: medium
+    body: "Who is the intended audience of this document? Summarize the main message for that audience."
+
+  - name: medium_non_programming_action
+    type: non_programming
+    length: medium
+    body: |
+      What actions or next steps are recommended? List them in order of priority.
+
+  - name: medium_non_programming_evidence
+    type: non_programming
+    length: medium
+    body: |
+      What evidence supports the main claims? List sources or data points mentioned.
+
+  - name: long_programming_migration
+    type: programming
+    length: long
+    body: "Outline a step-by-step migration or refactoring plan based on the current and target design in the context. Include risks and rollback."
+
+  - name: long_programming_spec
+    type: programming
+    length: long
+    body: |
+      Write a short technical spec: inputs and outputs, preconditions, postconditions, and at least three test scenarios. Use the context as the source of truth.
+
+  - name: long_architecture_observability
+    type: architecture
+    length: long
+    body: "Design an observability strategy (logging, metrics, tracing, alerts) for the system described. Include dashboards and runbooks."
+
+  - name: long_architecture_runbook
+    type: architecture
+    length: long
+    body: |
+      Draft a runbook for operating the system described: how to deploy, monitor, and respond to common failures. Include escalation steps.
+
+  - name: long_non_programming_timeline
+    type: non_programming
+    length: long
+    body: "Extract any dates, milestones, or phases from the document. Present a clear timeline and dependencies."
+
+  - name: long_non_programming_synthesis
+    type: non_programming
+    length: long
+    body: |
+      Synthesize the document into a single narrative (about 200 words). Preserve the main message and logical flow. Do not add new claims.
+
+  - name: long_non_programming_stakeholders
+    type: non_programming
+    length: long
+    body: |
+      Who are the stakeholders mentioned or implied? For each, summarize their interests and what the document says about them.
+
+  - name: long_simple_faq
+    type: simple
+    length: long
+    body: "Based on the document, create a short FAQ (5–10 questions and answers) that would help a new reader understand the content and next steps."
+
+  - name: long_simple_glossary
+    type: simple
+    length: long
+    body: |
+      Create a short glossary of the main terms used in this document. For each term, give a one-sentence definition and one example from the text.

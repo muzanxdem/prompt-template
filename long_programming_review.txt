@@ -1,0 +1,6 @@
+Review the code or technical design in the context. Cover:
+1) Correctness and potential bugs
+2) Readability and maintainability
+3) Performance and security
+4) Suggested refactors and best practices
+Provide concrete examples where relevant.

@@ -1,0 +1,3 @@
+Design an enterprise-grade system architecture based on the requirements in the document.
+Include: component diagram, data flow, deployment strategy, failure handling,
+monitoring, and how to scale horizontally. Justify key technology choices.

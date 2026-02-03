@@ -1,0 +1,5 @@
+Using the full context provided, produce a detailed technical specification or implementation guide.
+Include: scope and assumptions, high-level design, interface definitions, data models,
+error handling, testing strategy, and deployment steps. Where the document describes
+code or APIs, summarize and extend with concrete examples and best practices.
+Aim for something a developer could use to implement the system without further research.

@@ -1,0 +1,1 @@
+Write a short technical spec: inputs and outputs, preconditions, postconditions, and at least three test scenarios. Use the context as the source of truth.
