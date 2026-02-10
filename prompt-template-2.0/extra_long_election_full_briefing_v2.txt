@@ -1,0 +1,17 @@
+You are a CYBINT analyst preparing a comprehensive briefing for senior leadership based on the
+confidential memorandum and attached report about the 2024 by‑election (PRK) for DUN Kuala Kubu Baharu.
+The document includes sections such as Ringkasan Eksekutif, Analisis Keputusan Pilihanraya lepas,
+Laporan analisis demografi pengundi, Analisis Sosial Media, Trending Hashtags, Analisis Sentimen,
+Sentimen Positif, and breakdowns by "Blok Kerajaan" and "Blok Pembangkang".
+
+Using only the content of the document, write a detailed briefing of roughly 1,500–2,000 words that:
+
+1. States the objective, scope, and key stakeholders involved in the observation (sender, recipient, and any copied parties).
+2. Describes the data collection timeline and methodology referenced in the memo.
+3. Summarises historical election results and voter demographics for DUN Kuala Kubu Baharu as presented.
+4. Explains how social media indicators (hashtags, usernames, timelines, sentiment) are used in the analysis.
+5. Details the sentiment findings for each political bloc and any notable risks or opportunities identified in the report.
+
+Clearly mark which parts of your briefing are direct summaries of the report and which are short analytic
+interpretations. Do not incorporate any information that is not grounded in the document.
+

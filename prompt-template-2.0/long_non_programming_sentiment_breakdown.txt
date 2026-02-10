@@ -1,0 +1,12 @@
+You are reviewing the sections of the report that describe sentiment and political alignment,
+including "Analisis Sentimen", "Sentimen Positif", and the sub‑sections on "Blok Kerajaan"
+and "Blok Pembangkang".
+
+Based strictly on the report, write a 5–7 paragraph analytical note that:
+
+1. Explains how sentiment is categorised and measured in the document.
+2. Describes what the report says about positive or negative sentiment toward each bloc.
+3. Highlights any trends or patterns explicitly noted in the text.
+
+Avoid adding external political context; limit your explanation to what the report states.
+

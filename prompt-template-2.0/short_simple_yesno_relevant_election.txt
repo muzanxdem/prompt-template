@@ -1,0 +1,7 @@
+You are checking whether part of a confidential election report is relevant to a specific query.
+
+Question: Does the section that mentions "DUN Kuala Kubu Baharu" contain information that is directly
+relevant to understanding the constituency for the 2024 by-election?
+
+Answer only "Yes, because ..." or "No, because ...", using evidence from the document.
+

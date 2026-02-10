@@ -1,0 +1,9 @@
+You are reading a confidential memorandum and attached report prepared by Eclogic Sdn Bhd
+about the 2024 by-election (PRK) for the state seat DUN Kuala Kubu Baharu.
+
+In one short sentence, answer this question based only on the document:
+
+What is the main purpose of this memo and observation report?
+
+If the purpose is not clearly stated, say that the report does not specify it.
+
