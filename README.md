@@ -96,3 +96,6 @@ presets:
 ```
 
 Edit `templates_config.yaml` to add your own presets, then run `python3 generate_prompt_templates.py` to regenerate the `.txt` files.
+
+## Reference/Credit to:
+https://github.com/alexziskind1/machine_tests/tree/main/ml/auto_prompter/prompts
